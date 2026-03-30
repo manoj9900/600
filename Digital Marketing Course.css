@@ -108,7 +108,7 @@ font-size: clamp(2.5rem, 5vw, 4.5rem);
 line-height: 1.1;
 margin: 0 0 20px 0;
 font-family: var(--font-family-sans);
-font-weight: 900;
+font-weight: 600;
 }
 .hero-left p {
 font-size: 1.15rem;
@@ -205,7 +205,7 @@ margin: 0 auto;
 }
 .intro-container h2 {
 font-size: clamp(1.8rem, 3vw, 3rem);
-font-weight: 900;
+font-weight: 600;
 color: var(--color-darkblue);
 margin-bottom: 40px;
 line-height: 1.2;
@@ -326,13 +326,13 @@ margin: 0 auto;
 }
 .objective-container h2 {
 font-size: clamp(1.8rem, 3vw, 3rem);
-font-weight: 900;
+font-weight: 600;
 color: white;
 margin-bottom: 40px;
 line-height: 1.2;
 position: relative;
 padding-bottom: 15px;  
-font-family: 'Times New Roman', serif; 
+font-family: 'Space Grotesk', sans-serif;
 }
 .objective-container h2::after {
 content: '';
@@ -394,10 +394,10 @@ transform: perspective(1000px) translateZ(20px);
 margin: 0 0 10px 0; 
 padding-top: 30px; 
 font-size: 1.6rem;
-font-weight: 800;
+font-weight: 500;
 color: var(--color-darkblue);
 line-height: 1.3;
-font-family: 'Times New Roman', serif; 
+font-family: 'Space Grotesk', sans-serif;
 }
 .modern-objective-card p {
 font-size: 1rem;
@@ -525,13 +525,13 @@ margin: 0 auto;
 }
 .target-audience-container .section-header {
 font-size: clamp(1.8rem, 3vw, 3rem);
-font-weight: 900;
+font-weight: 600;
 color: var(--color-darkblue);
 margin-bottom: 40px;
 line-height: 1.2;
 position: relative;
 padding-bottom: 15px;
-font-family: 'Times New Roman', serif;
+font-family: 'Space Grotesk', sans-serif;
 }
 .target-audience-container .section-header::after {
 content: '';
@@ -587,10 +587,10 @@ border-radius: 0;
 }
 .audience-card-custom h3 {
 font-size: 1.4rem;
-font-weight: 700;
+font-weight: 500;
 color: var(--color-darkblue);
 margin: 0 0 10px 0;
-font-family: 'Times New Roman', serif;
+font-family: 'Space Grotesk', sans-serif;
 }
 .audience-card-custom p {
 font-size: 1rem;
@@ -633,13 +633,13 @@ margin: 0 auto;
 }
 .delivery-container .section-header {
 font-size: clamp(1.8rem, 3vw, 3rem);
-font-weight: 900;
+font-weight: 600;
 color: white;
 margin-bottom: 50px;
 line-height: 1.2;
 position: relative;
 padding-bottom: 15px;
-font-family: 'Times New Roman', serif;
+font-family: 'Space Grotesk', sans-serif;
 }
 .delivery-container .section-header::after {
 content: '';
@@ -682,10 +682,10 @@ margin: 0;
 }
 .info-detail {
 font-size: 1.4rem;
-font-weight: 800;
+font-weight: 500;
 color: var(--color-darkblue);
 margin: 5px 0 0 0;
-font-family: 'Times New Roman', serif;
+font-family: 'Space Grotesk', sans-serif;
 margin-top: 10px;
 }
 .timing-card {
@@ -706,28 +706,42 @@ border-bottom: 1px solid var(--color-lightgray);
 font-family: 'Times New Roman', serif;
 }
 .timing-list-container {
-display: grid;
-grid-template-columns: repeat(2, 1fr); 
-gap: 25px 60px;
-margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+    margin-bottom: 30px;
 }
-
-.timing-item {
-border: 2px solid var(--color-red); 
-padding: 15px 25px;
-border-radius: 8px;
-background: #fff; 
+.timing-box {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px 30px;
+    border: 2px solid #E71119;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
 }
-.timing-label {
-font-weight: 600;
-color: var(--color-darkblue);
-margin: 0 0 6px 0;
+.timing-heading {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-darkblue);
+    margin-bottom: 20px;
 }
-
-.timing-time {
-font-weight: 500;
-color: var(--color-red);
-margin: 0;
+.slot {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 3px solid var(--color-red);
+}
+.slot-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+    display: block;
+    margin-bottom: 3px;
+}
+.slot-time {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-red);
+    margin: 0;
 }
 .flexible-access {
 font-size: 1rem;
@@ -766,7 +780,7 @@ padding-top: 5px;
 
 /* Section */
 .topics-section {
-padding: 80px 20px;
+padding: 60px 20px;
 background: #ffffff;
 }
 /* Container */
@@ -778,10 +792,10 @@ margin: 0 auto;
 .topics-header {
 text-align: center;
 font-size: clamp(2rem, 3vw, 3rem);
-font-weight: 900;
+font-weight: 600;
 color: var(--color-darkblue);
 margin-bottom: 60px;
-font-family: 'Times New Roman', serif;
+font-family: 'Space Grotesk', sans-serif;
 position: relative;
 }
 .topics-header::after {
@@ -800,8 +814,8 @@ gap: 25px;
 }
 .topic-card {
 background: #ffffff;
-border: 2px solid var(--color-lightgray);
-box-shadow: 0 7px 20px rgba(0, 32, 69, 0.183);
+border: 2px solid #0a2e69;
+box-shadow: 0 7px 20px rgba(0, 32, 69, 0.265);
 border-radius: 12px;
 padding: 25px 20px;
 text-align: left;
@@ -874,13 +888,13 @@ margin: 0 auto;
 }
 .fees-header {
 font-size: clamp(1.8rem, 3vw, 3rem);
-font-weight: 900;
+font-weight: 600;
 color: white;
 margin-bottom: 50px;
 line-height: 1.2;
 position: relative;
 padding-bottom: 15px;
-font-family: 'Times New Roman', serif;
+font-family: 'Space Grotesk', sans-serif;
 }
 .fees-header::after {
 content: '';
@@ -941,10 +955,10 @@ margin-bottom: 15px;
 }
 .prop-title {
 font-size: 1.4rem;
-font-weight: 700;
+font-weight: 500;
 color: var(--color-darkblue);
 margin: 0 0 10px 0;
-font-family: 'Times New Roman', serif;
+font-family: 'Space Grotesk', sans-serif;
 }
 .prop-detail {
 font-size: 1rem;
@@ -1050,13 +1064,13 @@ margin: 0 auto;
 }
 .cert-header {
 font-size: clamp(1.8rem, 3vw, 3rem);
-font-weight: 900;
+font-weight: 600;
 color: var(--color-darkblue);
 margin-bottom: 50px;
 line-height: 1.2;
 position: relative;
 padding-bottom: 15px;
-font-family: 'Times New Roman', serif;
+font-family: 'Space Grotesk', sans-serif;
 }
 .cert-header::after {
 content: '';
@@ -1125,10 +1139,10 @@ border-top: 5px solid var(--color-red);
 border-top: 5px solid var(--color-red); 
 }
 .cert-card.primary-cert-card .card-detail strong {
-color: var(--color-red);
+color: white;
 }
 .cert-card.secondary-cert-card .card-detail strong {
-color: var(--color-red);
+color: white;
 }
 /* Mobile Responsiveness */
 @media (max-width: 600px) {
@@ -1154,12 +1168,12 @@ align-items: start;
 /* Heading */
 .footer-heading {
 font-size: 1.1rem;
-font-weight: 700;
+font-weight: 600;
 color: #E71119;
 margin-bottom: 20px;
 text-transform: uppercase;
 letter-spacing: 1px;
-font-family: 'Times New Roman', serif;
+font-family: 'Space Grotesk', sans-serif;
 }
 .reach-item {
 display: flex;
@@ -1307,4 +1321,15 @@ margin-top: 10px;
 .footer-logo-bottom img {
 margin-left: 0 !important;
 }
+}
+
+
+.brand-link {
+    color: var(--color-red);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.brand-link:hover {
+    text-shadow: 0 0 8px rgba(231, 17, 25, 0.4);
 }
